@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Montserrat', sans-serif;
+    line-height: 1.6;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.head{
+    background-color: aliceblue;
+    padding:16px 0;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+h1{ 
+    margin: 0;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.headcat{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+
+    width: 47px;
+    height: auto;
+    max-width: 20vw;
+    max-height: 20vh;
+    display: block;
+
+    transition: transform 0.3 ease;
+}
+
+
+.cat{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    transition: transform 0.3 ease;
+}
+
+.headcat:hover .cat{
+    transform: scale(1.3);
+}
+
+@media (max-width: 720px){
+    .cat{
+        display: none;
+    }
+}
+
+.two-col{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.col-left{
+    flex: 1 1 300px;
+}
+
+.col-right{
+    flex: 1 1 300px;
+}
+
+p{
+    margin-right: 2rem; 
+    font-weight: 500;
+}
+
+li{
+    margin-bottom: 0.2rem;
+}
+
+@media (max-width: 768px) {
+  .two-col {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .col-left, .col-right {
+    width: 100%;
+    flex: none;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+.cat2{
+    max-width: 500px;
+    height: auto;
+    display: block;
+}
+.bigcat {
+  flex: 0 0 auto;
+  order: 3;
+  margin-left: 2rem;
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 1rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  ul {
+    line-height: 1.6;
+  }
+  img.cat2 {
+    max-width: 100%;
+    height: auto;
+    margin-top: 1.5rem;
+  }
+}
+
+.podhod{
+    padding: 2rem 1rem;
+    max-width: 700px;
+    margin: 0;
+}
+
+.podhod h3{
+    text-align: left;
+    margin-bottom: 1.25rem;
+}
+
+.steps{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.steps li{
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.5;
+}
+
+.steps li::before {
+    content: "✅";
+    position: absolute;
+    left: 0;
+    top: 0.1rem;
+}
+
+.like-block {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.like-btn {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  padding: 0.6rem 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  color: #374151;
+  transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+  transform: scale(1);
+}
+
+/* Скейл при наведении */
+.like-btn:hover {
+  border-color: #3b82f6;
+  background: #f8fafc;
+  color: #1d4ed8;
+  transform: scale(1.1);
+}
+
+/* Эффект после лайка */
+.like-btn.liked {
+  background: #eff6ff;
+  border-color: #3b82f6;
+  color: #1d4ed8;
+  transform: scale(1); /* чтобы после клика не оставалось увеличенным */
+}
+
+.like-count {
+  font-weight: 600;
+  color: #6b7280;
+}

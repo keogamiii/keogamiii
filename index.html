@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="headcat">
+        <img src="foto/cat.jpg" alt="cat" class="cat">
+    </div>
+
+    <header class="head">
+        <div class="container">
+            <h1>Твой сайт - мой код</h1>
+        </div>
+    </header>
+    
+    <section class="container">
+        <div class="two-col">
+            <div class="col-left">
+                <h2>Кто я?</h2>
+                <p>Я начинающий веб разработчик.Пишу сайты с нуля в VS Code. Люблю работать с кодом напрямую: без шаблонов и рамок — так можно воплотить самые смелые идеи в жизнь.</p>
+             </div>
+             <div class="col-right">
+                <h3>Мои навыки</h3>
+                <ul>
+                    <li>HTML5 / CSS3 — чистая вёрстка, семантика, доступность</li>
+                    <li>Адаптив — правильное отображение на разных устройствах</li>
+                    <li>Работа в VS Code — без конструкторов, только код</li>
+                    <li>Базовые JS — интерактив, простые скрипты</li>
+                    <li>Git — коммиты, ветки, аккуратная история изменений</li>
+                </ul>
+             </div>
+             <div class="bigcat">
+                <img src="foto/bigcat.jpg  " alt="" class="cat2">
+             </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="podhod">
+            <h4>Мой подход к работе</h4>
+            <p>Перед началом работы я придерживаюсь собственных правил — так меньше сюрпризов в середине проекта.</p>
+            <ul class="steps">
+                <li>Разбить сайт на блоки: разделить всю смысловую часть и оформить её отдельными секциями.</li>
+                <li>Продумать шапку сайта и логотип (если есть) — это сразу задаёт структуру.</li>
+                <li>Представить, как блоки будут располагаться на странице: набросать простую схему в голове или на бумаге.</li>
+                <li>Подумать про адаптацию: как сайт будет выглядеть на разных устройствах, где что перестроится.</li>
+                <li>Наметить интерактив: какие элементы должны реагировать на действия пользователя.</li>
+                <li>Начать с вёрстки: собрать основной текст и фото, чтобы видеть каркас.</li>
+                <li>Добавить стилистику и интерактив — довести до аккуратного вида.</li>
+                <li>Проверить на мобильном: убедиться, что всё встаёт ровно и ничего не ломается.</li>
+                <li>Сделать финальную вычитку: проверить отступы, шрифты и мелкие косяки, которые видно только в конце.</li>
+            </ul>
+        </div>
+    </section>
+
+   <section class="final">
+        <div>
+            <h5>Поставьте лайк, если котик не сломал верстку</h5>
+        </div>
+        <div class="like-block">
+            <button id="like-btn" class="like-btn">
+            <span class="icon">❤️</span>
+            </button>
+            <span id="like-count" class="like-count">0</span>
+        </div>
+   </section>
+    <script src="/script.js"></script>
+</body>
+</html> 
